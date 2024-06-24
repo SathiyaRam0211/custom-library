@@ -19,6 +19,8 @@ export const StatusBar = styled.div``;
 
 export const SongsWrapper = styled.div`
   padding: 16px 0;
+  height: calc(100vh - 350px);
+  overflow-y: scroll;
 `;
 
 export const SongRow = styled.div<SongRowProps>`
@@ -29,15 +31,41 @@ export const SongRow = styled.div<SongRowProps>`
   border: 0.5px solid ${dark};
   border-bottom: none;
   background: ${(props) => (props.$header ? "white" : "auto")};
-
+  cursor: pointer;
   &:hover {
     background: white;
   }
-
   &:last-child {
     border-bottom: 1px solid ${dark};
   }
 `;
+
+export const NameRow = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+`;
+
+export const BigRowStyle = {
+  minWidth: "20%",
+  maxWidth: "20%",
+  whiteSpace: "nowrap",
+  overflow: "hidden",
+  textOverflow: "ellipsis",
+};
+
+export const SmallRowStyle = {
+  minWidth: "5%",
+  maxWidth: "5%",
+  whiteSpace: "nowrap",
+  overflow: "hidden",
+  textOverflow: "ellipsis",
+};
+
+export const RowImgStyle = {
+  height: "20px",
+  borderRadius: "4px",
+};
 
 export const Logo = styled.div`
   display: flex;
@@ -54,7 +82,7 @@ export const Logo = styled.div`
   }
 `;
 
-export const LogoImgStyles = {
+export const LogoImgStyle = {
   height: "48px",
 };
 

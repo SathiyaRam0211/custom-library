@@ -1,3 +1,5 @@
+import { Dispatch, SetStateAction } from "react";
+
 export interface InputProps {
   $inputWidth?: string;
 }
@@ -23,4 +25,11 @@ export interface SongProps {
   album: string;
   genre: string;
   duration: string;
+  lyrics: string;
+  albumArt: string;
+}
+
+export interface PlayerContextProps {
+  songsList: Array<SongProps>;
+  setSongsList: Dispatch<SetStateAction<Array<SongProps>>>;
 }

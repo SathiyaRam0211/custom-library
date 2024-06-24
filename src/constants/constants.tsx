@@ -1,4 +1,4 @@
-import { NavbarMenuItemProps, SongProps } from "../../utils/util-interfaces";
+import { NavbarMenuItemProps, SongProps } from "../utils/util-interfaces";
 
 export const labels = {
   BRAND: "Krisp",
@@ -37,7 +37,7 @@ export const navbarMenuItems: Array<NavbarMenuItemProps> = [
   },
 ];
 
-export const sampleSongs: Array<SongProps> = [
+export const sampleSongs: Array<any> = [
   {
     name: "Espresso",
     artist: "Sabrina Carpenter",
